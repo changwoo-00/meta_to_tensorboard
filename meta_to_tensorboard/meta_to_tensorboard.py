@@ -43,11 +43,8 @@ def main():
     print('Open tensorboard?(y/n)')
     ans = input()
     if ans == 'y':
-<<<<<<< HEAD
-        os.system('cmd /k "tensorboard --logdir savedir/%s"'%config.savedir)
-=======
         os.system('cmd /k "tensorboard --logdir savedir\%s"'%config.savedir)
->>>>>>> first commit
+
 
 mode_arg = add_arg_group('mode')
 mode_arg.add_argument('--meta', type=str, default=None)
